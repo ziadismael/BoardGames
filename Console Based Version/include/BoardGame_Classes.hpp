@@ -100,4 +100,22 @@ public:
     //      If winner, declare so and end
     //      If draw, declare so and end
 
+
+//-------------------------------------------------------------------------------------------------------
+// Game Modes
+//-------------------------------------------------------------------------------------------------------
+
+// Pyramic X-O Game Mode
+class PyramicBoard : public Board
+{
+public:
+    PyramicBoard();
+    void display_board();
+    bool update_board(int x, int y, char symbol);
+    bool is_winner();
+    bool is_draw();
+    bool game_is_over();
+};
+
+
 };

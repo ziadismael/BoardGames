@@ -100,7 +100,7 @@ public:
     //      If winner, declare so and end
     //      If draw, declare so and end
 
-
+}
 //-------------------------------------------------------------------------------------------------------
 // Game Modes
 //-------------------------------------------------------------------------------------------------------
@@ -116,6 +116,14 @@ public:
     bool is_draw();
     bool game_is_over();
 };
-
-
+class RandPlayer : public Player
+{
+private:
+    int dimension;
+public:
+    RandPlayer(char symbol, int dimension);
+    void get_move(int& x, int& y);
 };
+
+
+//------------------------------------------------------------------------------------------------------=

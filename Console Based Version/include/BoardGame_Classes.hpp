@@ -101,7 +101,7 @@ public:
     //      If draw, declare so and end
 
 }
-//-------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------
 // Game Modes
 //-------------------------------------------------------------------------------------------------------
 
@@ -124,6 +124,27 @@ public:
     RandPlayer(char symbol, int dimension);
     void get_move(int& x, int& y);
 };
+//-------------------------------------------------------------------------------------------------------
+// 5X5 X-O Game Mode
+class X_O_5Board : public Board {
+public:
+    X_O_5Board();
+    bool update_board(int x, int y, char mark);
+    void display_board();
+    bool is_winner();
+    bool is_draw();
+    bool game_is_over();
+protected:
+    //Data member for calculating who is the winner 
+    int player1_points{};
+    int player2_points{};
 
+};
 
+class GameManager5x5 : public GameManager
+{
+public:
+    GameManager5x5(Board*, Player* playerPtr[2]);
+    void runThirdGame();
+};
 //------------------------------------------------------------------------------------------------------=

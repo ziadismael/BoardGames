@@ -24,3 +24,7 @@ void RandomPlayer::get_move(int& x, int& y) {
     x = (int)(rand() / (RAND_MAX + 1.0) * dimension);
     y = (int)(rand() / (RAND_MAX + 1.0) * dimension);
 }
+//get_move function for connect 4
+void RandomPlayer::get_move(int& y) {
+    y = (int)(rand() / (RAND_MAX + 1.0) * dimension);
+}

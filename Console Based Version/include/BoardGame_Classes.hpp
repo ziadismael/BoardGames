@@ -148,3 +148,17 @@ public:
     void runThirdGame();
 };
 //------------------------------------------------------------------------------------------------------=
+//Connect4 Game mode
+class Connect4_Board : public Board {
+public:
+    // Constructor initializes the Connect 4 board
+    Connect4_Board();
+
+    // Implementation of virtual functions from the base class
+    bool update_board(int x ,int y, char mark) override;
+    void display_board() override;
+    bool is_winner() override;
+    bool is_draw() override;
+    bool game_is_over() override;
+};
+//------------------------------------------------------------------------------------------------------

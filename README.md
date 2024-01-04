@@ -12,7 +12,7 @@ Make sure you have a C++ compiler installed on your system.
 ### Build
 
 ```bash
-g++ -o BoardGames main.cpp BoardGame_Classes.hpp RandPlayerPyramic.cpp ... (all files) ...
+g++ -Iinclude src/*.cpp Game.cpp -o Game
 ```
 
 ### Run

@@ -18,8 +18,9 @@ g++ -Iinclude src/*.cpp Game.cpp -o Game
 ### Run
 
 ```bash
-./BoardGames
+./Game
 ```
+or simply double click the generated exe file
 
 ## Game Modes
 ### 3x3 X-O Game Mode
